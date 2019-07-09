@@ -11201,13 +11201,13 @@ pre[class*=language-] {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-    border-color: #505cfd;
+    border-color: #569bbe;
     border-bottom-width: 2px;
 }
 
 .nav-tabs-icons .nav-link > span {
     display: block;
-    color: #505cfd;
+    color: #569bbe;
     font-size: 2.625rem;
     margin: 0 0 20px;
 }
