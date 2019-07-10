@@ -1,939 +1,952 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Avanan | Blog</title>
-  <!-- FAVICON-->
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-  <!-- Web Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <!-- Plugins-->
-  <link href="assets/css/plugins.min.css" rel="stylesheet">
-  <!-- Template core CSS-->
-  <link href="assets/css/template.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Avanan | Blog</title>
+<!-- FAVICON-->
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+<!-- Web Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<!-- Plugins-->
+<link href="assets/css/plugins.min.css" rel="stylesheet">
+<!-- Template core CSS-->
+<link href="assets/css/template.css" rel="stylesheet">
 
 
-  <style type="text/css">
-    #main-image {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65) 100%), url('https://www.avanan.com/hubfs/Gartner-summit-featured.png') no-repeat;
-      background-color: #cccccc;
-      height: 420px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      border-radius: 3px;
-    }
 
-    #second-image {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65) 100%), url('https://www.avanan.com/hubfs/Gartner_pre_blog_featured.png') no-repeat;
-      background-color: #cccccc;
-      height: 200px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      border-radius: 3px;
-    }
+<style type="text/css">
+  #main-image {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65) 100%), url('https://www.avanan.com/hubfs/Gartner-summit-featured.png') no-repeat;
+    background-color: #cccccc;
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 3px;
+  }
 
-    #third-image {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65) 100%), url('https://www.avanan.com/hubfs/2FA%20blog%20featured.png') no-repeat;
-      background-color: #cccccc;
-      height: 200px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      border-radius: 3px;
-      margin-top: 20px;
-    }
+  #second-image {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65) 100%), url('https://www.avanan.com/hubfs/Gartner_pre_blog_featured.png') no-repeat;
+    background-color: #cccccc;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 3px;
+  }
 
-    .reg-para {
-      margin: 0;
-      font-family: "Poppins", Arial;
-      font-size: .875rem;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #788487;
-      text-align: left;
-    }
+  #third-image {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65) 100%), url('https://www.avanan.com/hubfs/2FA%20blog%20featured.png') no-repeat;
+    background-color: #cccccc;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 3px;
+    margin-top: 20px;
+  }
 
-    .cat-desc {
-      padding-right: 12px !important;
-    }
+  .reg-para {
+    margin: 0;
+    font-family: "Poppins", Arial;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #788487;
+    text-align: left;
+  }
 
-    .category-divs > div {
-      border-bottom: 1px solid #f0f0f0;
-      padding-bottom: 10px;
-    }
+  .cat-desc {
+    padding-right: 12px !important;
+  }
 
-    .category-divs > div:hover {
-      border-bottom: 2px solid #dee2e6;
-      margin-top: -1px;
-      cursor: pointer;
-    }
+  .category-divs > div {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
 
-    .category-divs > div:active {
-      border-bottom: 2px solid #569bbe;
-    }
+  .category-divs > div:hover {
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: -1px;
+    cursor: pointer;
+  }
 
-    /** {
-      background: #000 !important;
-      color: #0f0 !important;
-      outline: solid #f00 1px !important;
-    }*/
+  .cat-tab-active {
+    border-bottom: 2px solid #569bbe !important;
+    margin-bottom: -1px;
+  }
 
-  </style>
+  /** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }*/
+
+  /* PHONES IN PORTRAIT col-3 */
+  @media (max-width: 576px) {
+    
+  }
+
+
+  /* PHONES IN LANDSCAPE col-sm-3 */
+  @media (min-width: 576px) and (max-width: 768px) {
+    
+  }
+
+
+  /* TABLETS col-md-3 */
+  @media (min-width: 768px) and (max-width: 992px) {
+    
+  }
+
+
+  /* LAPTOPS  col-lg-3 */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    
+  }
+
+
+  /* DESKTOPS col-xl-3 */
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    
+  }
+
+
+  /* LARGE DESKTOPS */
+  @media (min-width: 1500px) {
+     
+  }
+
+</style>
 </head>
 
 <body>
 
-  <!-- Preloader-->
-  <div class="page-loader">
-    <div class="page-loader-inner">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-      </div>
+<!-- Preloader-->
+<div class="page-loader">
+  <div class="page-loader-inner">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
     </div>
   </div>
-  <!-- Preloader end-->
+</div>
+<!-- Preloader end-->
 
 
-  <!-- PAGE HEADER-->
-  <header class="header">
-    <div class="container-fluid">
-      <!-- BRAND/LOGO-->
-      <div class="inner-header">
-        <a class="inner-brand" href="index.html">
-          <img id="clear-logo" src="assets/images/clear-logo.png">
-          <img id="white-logo" src="assets/images/white-logo.png">
-        </a>
-      </div>
-
-      <!-- NAVIGATION-->
-      <div class="inner-navigation collapse">
-        <div class="inner-nav">
-          <ul>
-            <!-- ANY SAAS TOP NAV -->
-            <li class="menu-item-has-children menu-item-has-mega-menu"><a href="#"><span class="menu-item-span">Any SaaS</span></a>
-              <div class="mega-menu">
-                <ul class="sub-menu mega-menu-row">
-                  <!-- BUSINESS SUB NAV -->
-                  <li class="menu-item-has-children mega-menu-col"><a href="#">BUSINESS</a>
-                    <ul class="sub-menu">
-                      <li><a>Office 365</a></li>
-                      <li><a>G Suite</a></li>
-                      <li><a>Salesforce</a></li>
-                      <li><a>ServiceNow</a></li>
-                      <li><a>Workday</a></li>
-                      <li><a class="view-all">VIEW ALL</a></li>
-                    </ul>
-                  </li>
-                  <!-- EMAIL & MESSAGING SUB NAV -->
-                  <li class="menu-item-has-children mega-menu-col"><a href="#">EMAIL & MESSAGING</a>
-                    <ul class="sub-menu">
-                      <li><a>Office 365 Email</a></li>
-                      <li><a>Mircosoft Outlook</a></li>
-                      <li><a>Gmail</a></li>
-                      <li><a>Skype for Business</a></li>
-                      <li><a>Slack</a></li>
-                    </ul>
-                  </li>
-                  <!-- FILE SHARING SUB NAV -->
-                  <li class="menu-item-has-children mega-menu-col"><a href="#">FILE SHARING</a>
-                    <ul class="sub-menu">
-                      <li><a>Box</a></li>
-                      <li><a>Citrix ShareFile</a></li>
-                      <li><a>Dropbox</a></li>
-                      <li><a>Egnyte</a></li>
-                      <li><a>Google Drive</a></li>
-                      <li><a>OneDrive</a></li>
-                    </ul>
-                  </li>
-                  <!-- IAAS SUB NAV -->
-                  <li class="menu-item-has-children mega-menu-col"><a href="#">IAAS</a>
-                    <ul class="sub-menu">
-                      <li><a>Amazon Web Services</a></li>
-                      <li><a>Google Cloud Platform</a></li>
-                      <li><a>Microsoft Azure</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <!-- ANY SECURITY TOP NAV -->
-            <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Any Security</span></a>
-              <ul class="sub-menu">
-                <li><a>Anti-Phishing</a></li>
-                <li><a>Malware & Ransomware</a></li>
-                <li><a>Account Takeover</a></li>
-                <li><a>DLP & Compliance</a></li>
-                <li><a>CASB/Shadow IT</a></li>
-                <li><a>Siem Integration</a></li>
-                <li><a class="view-all">VIEW ALL</a></li>
-              </ul>
-            </li>
-            <!-- HOW IT WORKS -->
-            <li><a><span class="menu-item-span">How It Works</span></a></li>
-            <!-- PRICING -->
-            <li><a><span class="menu-item-span">Pricing</span></a></li>
-            <!-- RESOURCES TOP NAV -->
-            <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Resources</span></a>
-              <ul class="sub-menu">
-                <li><a>Blog</a></li>
-                <li><a>Case Studies</a></li>
-                <li><a>Webinars</a></li>
-                <li><a>White Papers</a></li>
-                <li><a>Videos</a></li>
-                <li><a class="view-all">VIEW ALL</a></li>
-              </ul>
-            </li>
-            <!-- COMPANY TOP NAV -->
-            <li class="menu-item-has-children"><a><span class="menu-item-span">Company</span></a>
-              <ul class="sub-menu">
-                <li><a>About Us</a></li>
-                <li><a>Parnterships</a></li>
-                <li><a>Management Team</a></li>
-                <li><a>Board of Directors</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- MOBILE NAV TOGGLER -->
-      <div class="extra-nav">
-        <ul>
-          <li class="nav-toggle"><a href="#" data-toggle="collapse" data-target=".inner-navigation"><span class="menu-item-span"><i class="ti-menu"></i></span></a></li>
-        </ul>
-      </div>
+<!-- PAGE HEADER-->
+<header class="header">
+  <div class="container-fluid">
+    <!-- BRAND/LOGO-->
+    <div class="inner-header">
+      <a class="inner-brand" href="index.html">
+        <img id="clear-logo" src="assets/images/clear-logo.png">
+        <img id="white-logo" src="assets/images/white-logo.png">
+      </a>
     </div>
-    <!-- END NAVIGATION -->
-  </header>
-  <!-- END PAGE HEADER-->
 
-
-
-  <!-- Wrapper-->
-  <div class="wrapper">  
-
-    <!-- Blog-->
-    <section class="module">
-      <div class="container">
-        <div class="space" data-MY="-40px"></div>
-
-        
-
-        <div style="margin-bottom: 80px;">
-          <h1 class="text-center" style="margin-bottom: 45px; margin-top: -15px;">The Reinventing Email Security Blog</h1>
-          <div class="row">
-            <div id="main-image" class="col-8">
-              <h3 style="color: #fff; position: absolute; bottom: 0; left: 10px;">Top Takeaways from the 2019 Gartner Security & Risk Management Summit</h3>
-            </div>
-
-            <div class="col-4">
-              <div id="second-image" class="col-12">
-                <h5 style="color: #fff; position: absolute; bottom: 0; left: 10px;">What We’re Looking Forward to at Gartner Security & Risk Management Summit 2019</h5>
-              </div>
-
-              <div id="third-image" class="col-12">
-                <h5 style="color: #fff; position: absolute; bottom: 0; left: 10px;">Why Multi-Factor Authentication Isn't Foolproof</h5>
-              </div>              
-            </div>
-
-            <div class="col-12" style="margin-top: 30px;">
-
-              <div class="row category-divs">
-                <div class="col-12 col-md-4">
-                  <div class="row">
-                    <div class="col-3">
-                      <img style="width: 100%; margin-top: 10px;" src="assets/images/industry-insights.png">
-                    </div>
-                    <div class="col-9">
-                      <h5>Industry Insights</h5>
-                      <p class="reg-para">Trends in cloud security focused on email and collaboration. Data from analysts and experts.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                  <div class="row">
-                    <div class="col-3">
-                      <img style="width: 100%; margin-top: 10px;" src="assets/images/cloud-security-tips.png">
-                    </div>
-                    <div class="col-9">
-                      <h5>Cloud Security Tips</h5>
-                      <p class="reg-para">Insights on how to optimize cloud data security, protect business, and maintain brand reputation.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                  <div class="row">
-                    <div class="col-3">
-                      <img style="width: 100%; margin-top: 10px;" src="assets/images/attack-briefs.png">
-                    </div>
-                    <div class="col-9 cat-desc">
-                      <h5>Attack Briefs</h5>
-                      <p class="reg-para">Breaking news and exclusive details from our white-hat hackers on advanced inbox threats.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              
-              
-
-
-
-              <!-- <ul class="nav nav-tabs nav-justified">
-                <li class="nav-item text-left">
-                  <a class="nav-link" data-toggle="tab" href="#tab-1-1">
-                    <div class="row">
-                      <div class="col-3">
-                        <img style="width: 100%; margin-top: 10px;" src="assets/images/industry-insights.png">
-                      </div>
-                      <div class="col-9">
-                        <h5>Industry Insights</h5>
-                        <p class="reg-para">Trends in cloud security focused on email and collaboration. Data from analysts and experts.</p>
-                      </div>
-                    </div>
-                  </a>                 
-                </li>
-
-                <li class="nav-item text-left">
-                  <a class="nav-link" data-toggle="tab" href="#tab-1-2">
-                    <div class="row">
-                      <div class="col-3">
-                        <img style="width: 100%; margin-top: 10px;" src="assets/images/cloud-security-tips.png">
-                      </div>
-                      <div class="col-9">
-                        <h5>Cloud Security Tips</h5>
-                        <p class="reg-para">Insights on how to optimize cloud data security, protect business, and maintain brand reputation.</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li class="nav-item text-left">
-                  <a class="nav-link" data-toggle="tab" href="#tab-1-3">
-                    <div class="row">
-                      <div class="col-3">
-                        <img style="width: 100%; margin-top: 10px;" src="assets/images/attack-briefs.png">
-                      </div>
-                      <div class="col-9 cat-desc">
-                        <h5>Attack Briefs</h5>
-                        <p class="reg-para">Breaking news and exclusive details from our white-hat hackers on advanced inbox threats.</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul> -->
-
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="row">
-            <!-- LEFT POST COLUMN -->
-            <div id="left-post-index" class="col-lg-8 bg-white">
-
-
-              <!-- Featured Post-->
-              <article class="post">
-                  <div class="post-preview"><a href="single-post.html"><img src="assets/images/blog/1.jpg" alt=""></a></div>
-                  <div class="post-wrapper">
-                      <div class="post-header">
-                          <h2 class="post-title"><a href="single-post.html">Bluetooth Speaker</a></h2>
-                          <ul class="post-meta">
-                              <li>August 18, 2018</li>
-                              <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                              <li><a href="#">3 Comments</a></li>
-                          </ul>
-                      </div>
-                      <div class="post-content">
-                          <p>Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.    The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.</p>
-                      </div>
-                      <div class="post-more"><a href="single-post.html">Read more</a></div>
-                  </div>
-              </article>
-              <!-- Featured Post end-->
-            
-
-              <!-- ALL OTHER POSTS INDEX -->
-              <div class="row row-post-thumbnail">
-
-                <!-- Post-->
-                <article class="post row align-items-center">
-                  <div class="col-md-5">
-                      <div class="post-preview"><a href="#"><img src="assets/images/blog/3.jpg" alt=""></a></div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="post-wrapper">
-                      <div class="post-header">
-                        <h2 class="post-title"><a href="blog-single.html">Minimalist Chandelier</a></h2>
-                        <ul class="post-meta">
-                          <li><a href="#">Reece Guida</a></li>
-                          <li>November 18, 2016</li>
-                          <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                        </ul>
-                      </div>
-                      <div class="post-content">
-                        <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                        <p><a href="#">Read more</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!-- Post end-->
-
-                <!-- Post-->
-                <article class="post row align-items-center">
-                  <div class="col-md-5">
-                    <div class="post-preview"><a href="#"><img src="assets/images/blog/5.jpg" alt=""></a></div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="post-wrapper">
-                      <div class="post-header">
-                        <h2 class="post-title"><a href="blog-single.html">Standard Shape</a></h2>
-                        <ul class="post-meta">
-                          <li>November 18, 2016</li>
-                          <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                          <li><a href="#">3 Comments</a></li>
-                        </ul>
-                      </div>
-                      <div class="post-content">
-                        <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                        <p><a href="#">Read more</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!-- Post end-->
-                <!-- Post-->
-                <article class="post row align-items-center">
-                  <div class="col-md-5">
-                    <div class="post-preview"><a href="#"><img src="assets/images/blog/7.jpg" alt=""></a></div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="post-wrapper">
-                      <div class="post-header">
-                        <h2 class="post-title"><a href="blog-single.html">Street Fashion</a></h2>
-                        <ul class="post-meta">
-                          <li>November 18, 2016</li>
-                          <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                          <li><a href="#">3 Comments</a></li>
-                        </ul>
-                      </div>
-                      <div class="post-content">
-                        <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                        <p><a href="#">Read more</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!-- Post end-->
-                <!-- Post-->
-                <article class="post row align-items-center">
-                  <div class="col-md-5">
-                    <div class="post-preview"><a href="single-post.html"><img src="assets/images/blog/1.jpg" alt=""></a></div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="post-wrapper">
-                        <div class="post-header">
-                          <h2 class="post-title"><a href="single-post.html">Bluetooth Speaker</a></h2>
-                          <ul class="post-meta">
-                            <li>November 18, 2016</li>
-                            <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                            <li><a href="#">3 Comments</a></li>
-                          </ul>
-                        </div>
-                        <div class="post-content">
-                          <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                          <p><a href="single-post.html">Read more</a></p>
-                        </div>
-                    </div>
-                  </div>
-                </article>
-                <!-- Post end-->
-                <!-- Post-->
-                <article class="post row align-items-center">
-                  <div class="col-md-5">
-                    <div class="post-preview"><a href="#"><img src="assets/images/blog/3.jpg" alt=""></a></div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="post-wrapper">
-                      <div class="post-header">
-                        <h2 class="post-title"><a href="blog-single.html">Minimalist Chandelier</a></h2>
-                        <ul class="post-meta">
-                          <li><a href="#">3 Comments</a></li>
-                          <li>November 18, 2016</li>
-                          <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                        </ul>
-                      </div>
-                      <div class="post-content">
-                        <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                        <p><a href="#">Read more</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!-- Post end-->
-                <!-- Post-->
-                <article class="post row align-items-center">
-                  <div class="col-md-5">
-                    <div class="post-preview"><a href="#"><img src="assets/images/blog/5.jpg" alt=""></a></div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="post-wrapper">
-                      <div class="post-header">
-                        <h2 class="post-title"><a href="blog-single.html">Standard Shape</a></h2>
-                        <ul class="post-meta">
-                          <li>November 18, 2016</li>
-                          <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                          <li><a href="#">3 Comments</a></li>
-                        </ul>
-                      </div>
-                      <div class="post-content">
-                        <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                        <p><a href="#">Read more</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!-- Post end-->
-                <!-- Post-->
-                <article class="post row align-items-center">
-                  <div class="col-md-5">
-                    <div class="post-preview"><a href="#"><img src="assets/images/blog/7.jpg" alt=""></a></div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="post-wrapper">
-                      <div class="post-header">
-                        <h2 class="post-title"><a href="blog-single.html">Street Fashion</a></h2>
-                        <ul class="post-meta">
-                          <li>November 18, 2016</li>
-                          <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                          <li><a href="#">3 Comments</a></li>
-                        </ul>
-                      </div>
-                      <div class="post-content">
-                        <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                        <p><a href="#">Read more</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!-- Post end-->
-              </div>
-              <!-- END ALL OTHER POST INDEX -->
-
-              <!-- Page Navigation-->
-              <div class="row">
-                <div class="col-md-12">
-                  <nav>
-                    <ul class="pagination justify-content-center">
-                      <li class="page-item"><a class="page-link" href="#"><span class="fas fa-angle-left"></span></a></li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#"><span class="fas fa-angle-right"></span></a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <!-- Page Navigation end-->
-          </div>
-          <!-- END LEFT POST COLUMN -->
-
-          <!-- RIGHT BLOG NAV -->
-          <div id="right-blog-nav" class="col-lg-4 bg-white">
-            <div class="sidebar">
-
-              <!-- Search widget-->
-              <aside class="widget widget-search">
-                <form>
-                  <input class="form-control" type="search" placeholder="Type Search Words">
-                  <button class="search-button" type="submit"><span class="fas fa-search"></span></button>
-                </form>
-              </aside>
-
-              <div class="space" data-MY="-40px"></div>
-
-              <!-- BLOG TABS -->
-              <aside class="widget">
-                <ul class="nav nav-tabs nav-tabs-icons nav-justified">
-                   <li class="nav-item">
-                       <a class="nav-link active" data-toggle="tab" href="#tab-7-1">
-                           <span class="ti-layout"></span>
-                           <h6>Popular</h6>
-                       </a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link" data-toggle="tab" href="#tab-7-2">
-                           <span class="ti-cup"></span>
-                           <h6>Recent</h6>
-                       </a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link" data-toggle="tab" href="#tab-7-3">
-                           <span class="ti-layout"></span>
-                           <h6>All</h6>
-                       </a>
-                   </li>
-                </ul>
-
-                <div class="tab-content">
-                    <div class="tab-pane show active" id="tab-7-1">
-                      <aside class="widget widget-recent-entries-custom">
-                        <div class="widget-title">
-                          <h6>Popular Posts</h6>
-                        </div>
-                        <ul>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                        </ul>
-                      </aside>
-                    </div>
-
-                    <div class="tab-pane" id="tab-7-2">
-                     <aside class="widget widget-recent-entries-custom">
-                        <div class="widget-title">
-                          <h6>Recent Posts</h6>
-                        </div>
-                        <ul>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                        </ul>
-                      </aside>
-                    </div>
-
-                    <div class="tab-pane" id="tab-7-3">
-                      <aside class="widget widget-recent-entries-custom">
-                        <div class="widget-title">
-                          <h6>All Posts</h6>
-                        </div>
-                        <ul>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                          <li class="clearfix">
-                            <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
-                            <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
-                          </li>
-                        </ul>
-                      </aside>
-                    </div>
-
-                </div>
-              </aside>
-
-              <!-- Categories widget-->
-              <aside class="widget widget-categories">
-                <div class="widget-title">
-                  <h6>Categories</h6>
-                </div>
-                <ul>
-                  <li><a href="#">Journey <span class="float-right">112</span></a></li>
-                  <li><a href="#">Development <span class="float-right">86</span></a></li>
-                  <li><a href="#">Sport <span class="float-right">10</span></a></li>
-                  <li><a href="#">Photography <span class="float-right">144</span></a></li>
-                  <li><a href="#">Symphony <span class="float-right">18</span></a></li>
-                </ul>
-              </aside>
-
-              <!-- Twitter widget-->
-              <aside class="widget twitter-feed-widget">
-                <div class="widget-title">
-                  <h6>Twitter Feed</h6>
-                </div>
-                <div class="twitter-feed" data-twitter="345170787868762112" data-number="2"></div>
-              </aside>
-
-              <!-- Tags widget-->
-              <aside class="widget widget-tag-cloud">
-                <div class="widget-title">
-                  <h6>Tags</h6>
-                </div>
-                <div class="tag-cloud"><a href="#">e-commerce</a><a href="#">portfolio</a><a href="#">responsive</a><a href="#">bootstrap</a><a href="#">business</a><a href="#">corporate</a></div>
-              </aside>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- Blog end-->
-
-    <!-- FOOTER-->
-    <footer class="footer">
-      <div class="footer-widgets">
-        <div class="container">
-          <div class="row">
-            
-
-            <!-- SAAS PROTECTION LINKS -->
-            <div class="col-6 col-md-3">
-              <aside class="widget widget-text">
-                <div class="widget-title">
-                  <h6>SaaS We Protect</h6>
-                </div>
-                <div class="textwidget">
-                  <ul>
+    <!-- NAVIGATION-->
+    <div class="inner-navigation collapse">
+      <div class="inner-nav">
+        <ul>
+          <!-- ANY SAAS TOP NAV -->
+          <li class="menu-item-has-children menu-item-has-mega-menu"><a href="#"><span class="menu-item-span">Any SaaS</span></a>
+            <div class="mega-menu">
+              <ul class="sub-menu mega-menu-row">
+                <!-- BUSINESS SUB NAV -->
+                <li class="menu-item-has-children mega-menu-col"><a href="#">BUSINESS</a>
+                  <ul class="sub-menu">
                     <li><a>Office 365</a></li>
                     <li><a>G Suite</a></li>
-                    <li><a>Microsoft Outlook</a></li>
-                    <li><a>Gmail</a></li>
-                    <li><a>Skype for Business</a></li>
-                    <li><a>Slack</a></li>
-                    <li><a>Box</a></li>
-                    <li><a>Citrix ShareFile</a></li>
-                    <li><a>Dropbox</a></li>
-                    <li><a>Egynyte</a></li>
-                    <li><a>Google Drive</a></li>
-                    <li><a>OneDrive</a></li>
                     <li><a>Salesforce</a></li>
                     <li><a>ServiceNow</a></li>
                     <li><a>Workday</a></li>
-                    <li><a>Microsoft Azure</a></li>
+                    <li><a class="view-all">VIEW ALL</a></li>
+                  </ul>
+                </li>
+                <!-- EMAIL & MESSAGING SUB NAV -->
+                <li class="menu-item-has-children mega-menu-col"><a href="#">EMAIL & MESSAGING</a>
+                  <ul class="sub-menu">
+                    <li><a>Office 365 Email</a></li>
+                    <li><a>Mircosoft Outlook</a></li>
+                    <li><a>Gmail</a></li>
+                    <li><a>Skype for Business</a></li>
+                    <li><a>Slack</a></li>
+                  </ul>
+                </li>
+                <!-- FILE SHARING SUB NAV -->
+                <li class="menu-item-has-children mega-menu-col"><a href="#">FILE SHARING</a>
+                  <ul class="sub-menu">
+                    <li><a>Box</a></li>
+                    <li><a>Citrix ShareFile</a></li>
+                    <li><a>Dropbox</a></li>
+                    <li><a>Egnyte</a></li>
+                    <li><a>Google Drive</a></li>
+                    <li><a>OneDrive</a></li>
+                  </ul>
+                </li>
+                <!-- IAAS SUB NAV -->
+                <li class="menu-item-has-children mega-menu-col"><a href="#">IAAS</a>
+                  <ul class="sub-menu">
                     <li><a>Amazon Web Services</a></li>
                     <li><a>Google Cloud Platform</a></li>
-                    <li><a><strong>View All SaaS</strong></a></li>
+                    <li><a>Microsoft Azure</a></li>
                   </ul>
-                </div>
-              </aside>
+                </li>
+              </ul>
             </div>
+          </li>
+          <!-- ANY SECURITY TOP NAV -->
+          <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Any Security</span></a>
+            <ul class="sub-menu">
+              <li><a>Anti-Phishing</a></li>
+              <li><a>Malware & Ransomware</a></li>
+              <li><a>Account Takeover</a></li>
+              <li><a>DLP & Compliance</a></li>
+              <li><a>CASB/Shadow IT</a></li>
+              <li><a>Siem Integration</a></li>
+              <li><a class="view-all">VIEW ALL</a></li>
+            </ul>
+          </li>
+          <!-- HOW IT WORKS -->
+          <li><a><span class="menu-item-span">How It Works</span></a></li>
+          <!-- PRICING -->
+          <li><a><span class="menu-item-span">Pricing</span></a></li>
+          <!-- RESOURCES TOP NAV -->
+          <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Resources</span></a>
+            <ul class="sub-menu">
+              <li><a>Blog</a></li>
+              <li><a>Case Studies</a></li>
+              <li><a>Webinars</a></li>
+              <li><a>White Papers</a></li>
+              <li><a>Videos</a></li>
+              <li><a class="view-all">VIEW ALL</a></li>
+            </ul>
+          </li>
+          <!-- COMPANY TOP NAV -->
+          <li class="menu-item-has-children"><a><span class="menu-item-span">Company</span></a>
+            <ul class="sub-menu">
+              <li><a>About Us</a></li>
+              <li><a>Parnterships</a></li>
+              <li><a>Management Team</a></li>
+              <li><a>Board of Directors</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- MOBILE NAV TOGGLER -->
+    <div class="extra-nav">
+      <ul>
+        <li class="nav-toggle"><a href="#" data-toggle="collapse" data-target=".inner-navigation"><span class="menu-item-span"><i class="ti-menu"></i></span></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- END NAVIGATION -->
+</header>
+<!-- END PAGE HEADER-->
 
-            <!-- SECURITY SERVICES LINKS -->
-            <div class="col-6 col-md-3">
-              <aside class="widget widget-text">
-                <div class="widget-title">
-                  <h6>Security We Offer</h6>
-                </div>
-                <div class="textwidget">
-                  <ul>
-                    <li><a>Anti-Phishing</a></li>
-                    <li><a>Malware & Ransomware</a></li>
-                    <li><a>Protection</a></li>
-                    <li><a>Data Leakage</a></li>
-                    <li><a>Prevention</a></li>
-                    <li><a>File Encryption</a></li>
-                    <li><a>Security Incident Event Management</a></li>
-                    <li><a>Shadow IT Management</a></li>
-                    <li><a>Cloud Access Control</a></li>
-                    <li><a><strong>View All Security Solutions</strong></a></li>
-                  </ul>
-                </div>
-              </aside>
-            </div>
 
-            <!-- RESOURCES LINKS -->
-            <div class="col-6 col-md-3">
-              <aside class="widget widget-text">
-                <div class="widget-title">
-                  <h6>Resources</h6>
-                </div>
-                <div class="textwidget">
-                  <ul>
-                    <li><a>Blog</a></li>
-                    <li><a>Case Studies</a></li>
-                    <li><a>White Papers</a></li>
-                    <li><a>Webinars</a></li>
-                    <li><a>News</a></li>
-                    <li><a>Videos</a></li>
-                    <li><a>Request a Demo</a></li>
-                    <li><a>Schedule a Free Trial</a></li>
-                    <li><a>Partner with Avanan</a></li>
-                  </ul>
-                </div>
-                <br>
-                <div class="widget-title">
-                  <h6>R&amp;D Center</h6>
-                </div>
-                <div class="text-widget">
-                  <p>12 Eliezer Kaplan Street<br>Tel Aviv, Isreal 6473413</p>
-                </div>
-              </aside>
-            </div>
-            
-            <!-- ABOUT US LINKS -->
-            <div class="col-6 col-md-3">
-              <aside class="widget widget-text">
-                <div class="widget-title">
-                  <h6>About Us</h6>
-                </div>
-                <div class="textwidget">
-                  <ul>
-                    <li><a>About Avanan</a></li>
-                    <li><a>Management Team</a></li>
-                    <li><a>Board of Directors</a></li>
-                    <li><a>Investors</a></li>
-                    <li><a>Awards</a></li>
-                    <li><a>News</a></li>
-                    <li><a>Contact Us</a></li>
-                    <li><a>Terms of Service</a></li>
-                    <li><a>Privacy Policy</a></li>
-                  </ul>
-                </div>
-                <br />
-                <div class="widget-title">
-                  <h6>Headquarters</h6>
-                </div>
-                <div class="text-widget">
-                  <p>242 West 30 Street<br>Suite 404<br>New York, NY 10001<br>1-855-528-2626</p>
-                  <ul class="social-icons">
-                    <li class="social-media"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="social-media"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="social-media"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    <li class="social-media"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  </ul>
-                </div>
-              </aside>
-            </div>
 
+<!-- Wrapper-->
+<div class="wrapper">  
+
+  <!-- Blog-->
+  <section class="module">
+    <div class="container">
+    <div class="space" data-MY="-40px"></div>
+
+
+    <div style="margin-bottom: 80px;">
+      <h1 class="text-center" style="margin-bottom: 45px; margin-top: -15px;">The Reinventing Email Security Blog</h1>
+      <div class="row">
+        <div style="" class="col-md-8">
+          <div id="main-image" >
+            <h3 style="color: #fff; position: absolute; bottom: 0; left: 10px;">Top Takeaways from the 2019 Gartner Security & Risk Management Summit</h3>
           </div>
         </div>
-      </div>
 
-      <!-- BOTTOM FOOTER BAR -->
-      <div class="footer-bar" data-MY="-60px">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="copyright">
-                <p>© Copyright
-                 <!-- YEAR SCRIPT -->
-                <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
-                  document.write(new Date().getFullYear());
-                </script> 
-                <!-- END YEAR SCRIPT -->
-                Avanan. All Rights Reserved.</p>
+        <div class="col-md-4">
+          <div id="second-image" class="col-12">
+            <h5 style="color: #fff; position: absolute; bottom: 0; left: 10px;">What We’re Looking Forward to at Gartner Security & Risk Management Summit 2019</h5>
+          </div>
+
+          <div id="third-image" class="col-12">
+            <h5 style="color: #fff; position: absolute; bottom: 0; left: 10px;">Why Multi-Factor Authentication Isn't Foolproof</h5>
+          </div>              
+        </div>
+
+        <div class="container" style="margin-top: 30px;">
+
+          <div class="row category-divs">
+            <div id="industry-insights" class="col-12 col-md-4">
+              <div class="row">
+                <div class="col-2 col-md-3">
+                  <img style="width: 100%; margin-top: 10px;" src="assets/images/industry-insights.png">
+                </div>
+                <div class="col-10 col-md-9">
+                  <h5>Industry Insights</h5>
+                  <p class="reg-para">Trends in cloud security focused on email and collaboration. Data from analysts and experts.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="cloud-security-tips" class="col-12 col-md-4">
+              <div class="row">
+                <div class="col-2 col-md-3">
+                  <img style="width: 100%; margin-top: 10px;" src="assets/images/cloud-security-tips.png">
+                </div>
+                <div class="col-10 col-md-9">
+                  <h5>Cloud Security Tips</h5>
+                  <p class="reg-para">Insights on how to optimize cloud data security, protect business, and maintain brand reputation.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="attack-briefs" class="col-12 col-md-4">
+              <div class="row">
+                <div class="col-2 col-md-3">
+                  <img style="width: 100%; margin-top: 10px;" src="assets/images/attack-briefs.png">
+                </div>
+                <div class="col-10 col-md-9 cat-desc">
+                  <h5>Attack Briefs</h5>
+                  <p class="reg-para">Breaking news and exclusive details from our white-hat hackers on advanced inbox threats.</p>
+                </div>
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
-    </footer>
-    <!-- END FOOTER -->
-  </div>
-  <!-- Wrapper end-->
+    </div>
 
-        <!-- Off canvas-->
-        <div class="off-canvas-sidebar">
-            <div class="off-canvas-sidebar-wrapper">
-                <div class="off-canvas-header"><a class="off-canvas-close" href="#"><span class="ti-close"></span></a></div>
-                <div class="off-canvas-content">
-                    <!-- Text widget-->
-                    <aside class="widget widget-text">
-                        <div class="textwidget">
-                            <p class="text-center"><img src="assets/images/logo-light-2.png" alt="" width="80px"></p>
-                            <p class="text-center">See how users experience your website in realtime to see changes.</p>
-                        </div>
-                    </aside>
-                    <!-- Recent portfolio widget-->
-                    <aside class="widget widget-recent-works">
-                        <ul>
-                            <li><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="assets/images/widgets/4.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="assets/images/widgets/5.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="assets/images/widgets/6.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="assets/images/widgets/7.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="assets/images/widgets/8.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="assets/images/widgets/9.jpg" alt=""></a></li>
-                        </ul>
-                    </aside>
-                    <!-- Social Icons-->
-                    <ul class="social-icons text-center">
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+
+
+    <div class="row">
+        <!-- LEFT POST COLUMN -->
+        <div id="left-post-index" class="col-lg-8 bg-white">
+
+
+          <!-- Featured Post-->
+          <article class="post">
+              <div class="post-preview"><a href="single-post.html"><img src="assets/images/blog/1.jpg" alt=""></a></div>
+              <div class="post-wrapper">
+                  <div class="post-header">
+                      <h2 class="post-title"><a href="single-post.html">Bluetooth Speaker</a></h2>
+                      <ul class="post-meta">
+                          <li>August 18, 2018</li>
+                          <li><a href="#">Branding</a>, <a href="#">Design</a></li>
+                          <li><a href="#">3 Comments</a></li>
+                      </ul>
+                  </div>
+                  <div class="post-content">
+                      <p>Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.    The first question of course was, how to get dry again: they had a consultation about this, and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them.</p>
+                  </div>
+                  <div class="post-more"><a href="single-post.html">Read more</a></div>
+              </div>
+          </article>
+          <!-- Featured Post end-->
+        
+
+          <!-- ALL OTHER POSTS INDEX -->
+          <div class="row row-post-thumbnail">
+
+            <!-- Post-->
+            <article class="post row align-items-center">
+              <div class="col-md-5">
+                  <div class="post-preview"><a href="#"><img src="assets/images/blog/3.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-7">
+                <div class="post-wrapper">
+                  <div class="post-header">
+                    <h2 class="post-title"><a href="blog-single.html">Minimalist Chandelier</a></h2>
+                    <ul class="post-meta">
+                      <li><a href="#">Reece Guida</a></li>
+                      <li>November 18, 2016</li>
+                      <li><a href="#">Branding</a>, <a href="#">Design</a></li>
                     </ul>
+                  </div>
+                  <div class="post-content">
+                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                    <p><a href="#">Read more</a></p>
+                  </div>
                 </div>
+              </div>
+            </article>
+            <!-- Post end-->
+
+            <!-- Post-->
+            <article class="post row align-items-center">
+              <div class="col-md-5">
+                <div class="post-preview"><a href="#"><img src="assets/images/blog/5.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-7">
+                <div class="post-wrapper">
+                  <div class="post-header">
+                    <h2 class="post-title"><a href="blog-single.html">Standard Shape</a></h2>
+                    <ul class="post-meta">
+                      <li>November 18, 2016</li>
+                      <li><a href="#">Branding</a>, <a href="#">Design</a></li>
+                      <li><a href="#">3 Comments</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-content">
+                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                    <p><a href="#">Read more</a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Post end-->
+            <!-- Post-->
+            <article class="post row align-items-center">
+              <div class="col-md-5">
+                <div class="post-preview"><a href="#"><img src="assets/images/blog/7.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-7">
+                <div class="post-wrapper">
+                  <div class="post-header">
+                    <h2 class="post-title"><a href="blog-single.html">Street Fashion</a></h2>
+                    <ul class="post-meta">
+                      <li>November 18, 2016</li>
+                      <li><a href="#">Branding</a>, <a href="#">Design</a></li>
+                      <li><a href="#">3 Comments</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-content">
+                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                    <p><a href="#">Read more</a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Post end-->
+            <!-- Post-->
+            <article class="post row align-items-center">
+              <div class="col-md-5">
+                <div class="post-preview"><a href="single-post.html"><img src="assets/images/blog/1.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-7">
+                <div class="post-wrapper">
+                    <div class="post-header">
+                      <h2 class="post-title"><a href="single-post.html">Bluetooth Speaker</a></h2>
+                      <ul class="post-meta">
+                        <li>November 18, 2016</li>
+                        <li><a href="#">Branding</a>, <a href="#">Design</a></li>
+                        <li><a href="#">3 Comments</a></li>
+                      </ul>
+                    </div>
+                    <div class="post-content">
+                      <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                      <p><a href="single-post.html">Read more</a></p>
+                    </div>
+                </div>
+              </div>
+            </article>
+            <!-- Post end-->
+            <!-- Post-->
+            <article class="post row align-items-center">
+              <div class="col-md-5">
+                <div class="post-preview"><a href="#"><img src="assets/images/blog/3.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-7">
+                <div class="post-wrapper">
+                  <div class="post-header">
+                    <h2 class="post-title"><a href="blog-single.html">Minimalist Chandelier</a></h2>
+                    <ul class="post-meta">
+                      <li><a href="#">3 Comments</a></li>
+                      <li>November 18, 2016</li>
+                      <li><a href="#">Branding</a>, <a href="#">Design</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-content">
+                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                    <p><a href="#">Read more</a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Post end-->
+            <!-- Post-->
+            <article class="post row align-items-center">
+              <div class="col-md-5">
+                <div class="post-preview"><a href="#"><img src="assets/images/blog/5.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-7">
+                <div class="post-wrapper">
+                  <div class="post-header">
+                    <h2 class="post-title"><a href="blog-single.html">Standard Shape</a></h2>
+                    <ul class="post-meta">
+                      <li>November 18, 2016</li>
+                      <li><a href="#">Branding</a>, <a href="#">Design</a></li>
+                      <li><a href="#">3 Comments</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-content">
+                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                    <p><a href="#">Read more</a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Post end-->
+            <!-- Post-->
+            <article class="post row align-items-center">
+              <div class="col-md-5">
+                <div class="post-preview"><a href="#"><img src="assets/images/blog/7.jpg" alt=""></a></div>
+              </div>
+              <div class="col-md-7">
+                <div class="post-wrapper">
+                  <div class="post-header">
+                    <h2 class="post-title"><a href="blog-single.html">Street Fashion</a></h2>
+                    <ul class="post-meta">
+                      <li>November 18, 2016</li>
+                      <li><a href="#">Branding</a>, <a href="#">Design</a></li>
+                      <li><a href="#">3 Comments</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-content">
+                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                    <p><a href="#">Read more</a></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Post end-->
+          </div>
+          <!-- END ALL OTHER POST INDEX -->
+
+          <!-- Page Navigation-->
+          <div class="row">
+            <div class="col-md-12">
+              <nav>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="page-link" href="#"><span class="fas fa-angle-left"></span></a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><span class="fas fa-angle-right"></span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- Page Navigation end-->
+      </div>
+      <!-- END LEFT POST COLUMN -->
+
+      <!-- RIGHT BLOG NAV -->
+      <div id="right-blog-nav" class="col-lg-4 bg-white">
+        <div class="sidebar">
+
+          <!-- Search widget-->
+          <aside class="widget widget-search">
+            <form>
+              <input class="form-control" type="search" placeholder="Type Search Words">
+              <button class="search-button" type="submit"><span class="fas fa-search"></span></button>
+            </form>
+          </aside>
+
+          <div class="space" data-MY="-40px"></div>
+
+          <!-- BLOG TABS -->
+          <aside class="widget">
+            <ul class="nav nav-tabs nav-tabs-icons nav-justified">
+               <li class="nav-item">
+                   <a class="nav-link active" data-toggle="tab" href="#tab-7-1">
+                       <span class="ti-layout"></span>
+                       <h6>Popular</h6>
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" data-toggle="tab" href="#tab-7-2">
+                       <span class="ti-cup"></span>
+                       <h6>Recent</h6>
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" data-toggle="tab" href="#tab-7-3">
+                       <span class="ti-layout"></span>
+                       <h6>All</h6>
+                   </a>
+               </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane show active" id="tab-7-1">
+                  <aside class="widget widget-recent-entries-custom">
+                    <div class="widget-title">
+                      <h6>Popular Posts</h6>
+                    </div>
+                    <ul>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                    </ul>
+                  </aside>
+                </div>
+
+                <div class="tab-pane" id="tab-7-2">
+                 <aside class="widget widget-recent-entries-custom">
+                    <div class="widget-title">
+                      <h6>Recent Posts</h6>
+                    </div>
+                    <ul>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                    </ul>
+                  </aside>
+                </div>
+
+                <div class="tab-pane" id="tab-7-3">
+                  <aside class="widget widget-recent-entries-custom">
+                    <div class="widget-title">
+                      <h6>All Posts</h6>
+                    </div>
+                    <ul>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                      <li class="clearfix">
+                        <div class="wi"><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></div>
+                        <div class="wb"><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2016</span></div>
+                      </li>
+                    </ul>
+                  </aside>
+                </div>
+
+            </div>
+          </aside>
+
+          <!-- Categories widget-->
+          <aside class="widget widget-categories">
+            <div class="widget-title">
+              <h6>Categories</h6>
+            </div>
+            <ul>
+              <li><a href="#">Journey <span class="float-right">112</span></a></li>
+              <li><a href="#">Development <span class="float-right">86</span></a></li>
+              <li><a href="#">Sport <span class="float-right">10</span></a></li>
+              <li><a href="#">Photography <span class="float-right">144</span></a></li>
+              <li><a href="#">Symphony <span class="float-right">18</span></a></li>
+            </ul>
+          </aside>
+
+          <!-- Twitter widget-->
+          <aside class="widget twitter-feed-widget">
+            <div class="widget-title">
+              <h6>Twitter Feed</h6>
+            </div>
+            <div class="twitter-feed" data-twitter="345170787868762112" data-number="2"></div>
+          </aside>
+
+          <!-- Tags widget-->
+          <aside class="widget widget-tag-cloud">
+            <div class="widget-title">
+              <h6>Tags</h6>
+            </div>
+            <div class="tag-cloud"><a href="#">e-commerce</a><a href="#">portfolio</a><a href="#">responsive</a><a href="#">bootstrap</a><a href="#">business</a><a href="#">corporate</a></div>
+          </aside>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Blog end-->
+
+<!-- FOOTER-->
+<footer class="footer">
+  <div class="footer-widgets">
+    <div class="container">
+      <div class="row">
+        
+
+        <!-- SAAS PROTECTION LINKS -->
+        <div class="col-6 col-md-3">
+          <aside class="widget widget-text">
+            <div class="widget-title">
+              <h6>SaaS We Protect</h6>
+            </div>
+            <div class="textwidget">
+              <ul>
+                <li><a>Office 365</a></li>
+                <li><a>G Suite</a></li>
+                <li><a>Microsoft Outlook</a></li>
+                <li><a>Gmail</a></li>
+                <li><a>Skype for Business</a></li>
+                <li><a>Slack</a></li>
+                <li><a>Box</a></li>
+                <li><a>Citrix ShareFile</a></li>
+                <li><a>Dropbox</a></li>
+                <li><a>Egynyte</a></li>
+                <li><a>Google Drive</a></li>
+                <li><a>OneDrive</a></li>
+                <li><a>Salesforce</a></li>
+                <li><a>ServiceNow</a></li>
+                <li><a>Workday</a></li>
+                <li><a>Microsoft Azure</a></li>
+                <li><a>Amazon Web Services</a></li>
+                <li><a>Google Cloud Platform</a></li>
+                <li><a><strong>View All SaaS</strong></a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+        <!-- SECURITY SERVICES LINKS -->
+        <div class="col-6 col-md-3">
+          <aside class="widget widget-text">
+            <div class="widget-title">
+              <h6>Security We Offer</h6>
+            </div>
+            <div class="textwidget">
+              <ul>
+                <li><a>Anti-Phishing</a></li>
+                <li><a>Malware & Ransomware</a></li>
+                <li><a>Protection</a></li>
+                <li><a>Data Leakage</a></li>
+                <li><a>Prevention</a></li>
+                <li><a>File Encryption</a></li>
+                <li><a>Security Incident Event Management</a></li>
+                <li><a>Shadow IT Management</a></li>
+                <li><a>Cloud Access Control</a></li>
+                <li><a><strong>View All Security Solutions</strong></a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+        <!-- RESOURCES LINKS -->
+        <div class="col-6 col-md-3">
+          <aside class="widget widget-text">
+            <div class="widget-title">
+              <h6>Resources</h6>
+            </div>
+            <div class="textwidget">
+              <ul>
+                <li><a>Blog</a></li>
+                <li><a>Case Studies</a></li>
+                <li><a>White Papers</a></li>
+                <li><a>Webinars</a></li>
+                <li><a>News</a></li>
+                <li><a>Videos</a></li>
+                <li><a>Request a Demo</a></li>
+                <li><a>Schedule a Free Trial</a></li>
+                <li><a>Partner with Avanan</a></li>
+              </ul>
+            </div>
+            <br>
+            <div class="widget-title">
+              <h6>R&amp;D Center</h6>
+            </div>
+            <div class="text-widget">
+              <p>12 Eliezer Kaplan Street<br>Tel Aviv, Isreal 6473413</p>
+            </div>
+          </aside>
+        </div>
+        
+        <!-- ABOUT US LINKS -->
+        <div class="col-6 col-md-3">
+          <aside class="widget widget-text">
+            <div class="widget-title">
+              <h6>About Us</h6>
+            </div>
+            <div class="textwidget">
+              <ul>
+                <li><a>About Avanan</a></li>
+                <li><a>Management Team</a></li>
+                <li><a>Board of Directors</a></li>
+                <li><a>Investors</a></li>
+                <li><a>Awards</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact Us</a></li>
+                <li><a>Terms of Service</a></li>
+                <li><a>Privacy Policy</a></li>
+              </ul>
+            </div>
+            <br />
+            <div class="widget-title">
+              <h6>Headquarters</h6>
+            </div>
+            <div class="text-widget">
+              <p>242 West 30 Street<br>Suite 404<br>New York, NY 10001<br>1-855-528-2626</p>
+              <ul class="social-icons">
+                <li class="social-media"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="social-media"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="social-media"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li class="social-media"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM FOOTER BAR -->
+  <div class="footer-bar" data-MY="-60px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            <p>© Copyright
+             <!-- YEAR SCRIPT -->
+            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script> 
+            <!-- END YEAR SCRIPT -->
+            Avanan. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+</div>
+<!-- Wrapper end-->
+
+    <!-- Off canvas-->
+    <div class="off-canvas-sidebar">
+        <div class="off-canvas-sidebar-wrapper">
+            <div class="off-canvas-header"><a class="off-canvas-close" href="#"><span class="ti-close"></span></a></div>
+            <div class="off-canvas-content">
+                <!-- Text widget-->
+                <aside class="widget widget-text">
+                    <div class="textwidget">
+                        <p class="text-center"><img src="assets/images/logo-light-2.png" alt="" width="80px"></p>
+                        <p class="text-center">See how users experience your website in realtime to see changes.</p>
+                    </div>
+                </aside>
+                <!-- Recent portfolio widget-->
+                <aside class="widget widget-recent-works">
+                    <ul>
+                        <li><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/widgets/4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/widgets/5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/widgets/6.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/widgets/7.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/widgets/8.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="assets/images/widgets/9.jpg" alt=""></a></li>
+                    </ul>
+                </aside>
+                <!-- Social Icons-->
+                <ul class="social-icons text-center">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                </ul>
             </div>
         </div>
-        <!-- Off canvas end-->
+    </div>
+    <!-- Off canvas end-->
 
-        <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
+    <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
 
-        <!-- Scripts-->
-        <script src="assets/js/custom/jquery-3.2.1.min.js"></script>
-        <script src="assets/js/custom/popper.min.js"></script>
-        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
-        <script src="assets/js/custom/plugins.min.js"></script>
-        <script src="assets/js/custom/custom.min.js"></script>
-    </body>
+    <!-- Scripts-->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <script src="assets/js/custom/plugins.min.js"></script>
+    <script src="assets/js/custom/custom.min.js"></script>
+
+    <script>
+      $(document).on('ready', function () {
+        $('#industry-insights').click(function() {
+          $('#industry-insights').addClass('cat-tab-active');
+          $('#cloud-security-tips').removeClass('cat-tab-active');
+          $('#attack-briefs').removeClass('cat-tab-active');
+        });
+
+        $('#cloud-security-tips').click(function() {
+          $('#cloud-security-tips').addClass('cat-tab-active');
+          $('#attack-briefs').removeClass('cat-tab-active');
+          $('#industry-insights').removeClass('cat-tab-active');
+        });
+
+        $('#attack-briefs').click(function() {
+          $('#attack-briefs').addClass('cat-tab-active');
+          $('#industry-insights').removeClass('cat-tab-active');
+          $('#cloud-security-tips').removeClass('cat-tab-active');
+        });
+      });
+    </script>
+
+  </body>
 </html>
