@@ -19,7 +19,6 @@
 
   <style type="text/css">
     #main-image {
-      /*background-image: url("https://www.avanan.com/hubfs/Gartner-summit-featured.png");*/
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65) 100%), url('https://www.avanan.com/hubfs/Gartner-summit-featured.png') no-repeat;
       background-color: #cccccc;
       height: 420px;
@@ -65,6 +64,21 @@
 
     .cat-desc {
       padding-right: 12px !important;
+    }
+
+    .category-divs > div {
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 10px;
+    }
+
+    .category-divs > div:hover {
+      border-bottom: 2px solid #dee2e6;
+      margin-top: -1px;
+      cursor: pointer;
+    }
+
+    .category-divs > div:active {
+      border-bottom: 2px solid #569bbe;
     }
 
     /** {
@@ -215,9 +229,9 @@
 
         
 
-        <div class="row" style="margin-bottom: 80px;">
-          <h1 style="margin-right: auto; margin-left: auto; margin-bottom: 45px; margin-top: -15px;">The Reinventing Email Security Blog</h1>
-          <div class="col-12 row">
+        <div style="margin-bottom: 80px;">
+          <h1 class="text-center" style="margin-bottom: 45px; margin-top: -15px;">The Reinventing Email Security Blog</h1>
+          <div class="row">
             <div id="main-image" class="col-8">
               <h3 style="color: #fff; position: absolute; bottom: 0; left: 10px;">Top Takeaways from the 2019 Gartner Security & Risk Management Summit</h3>
             </div>
@@ -234,13 +248,50 @@
 
             <div class="col-12" style="margin-top: 30px;">
 
+              <div class="row category-divs">
+                <div class="col-12 col-md-4">
+                  <div class="row">
+                    <div class="col-3">
+                      <img style="width: 100%; margin-top: 10px;" src="assets/images/industry-insights.png">
+                    </div>
+                    <div class="col-9">
+                      <h5>Industry Insights</h5>
+                      <p class="reg-para">Trends in cloud security focused on email and collaboration. Data from analysts and experts.</p>
+                    </div>
+                  </div>
+                </div>
 
-              <div></div>
+                <div class="col-12 col-md-4">
+                  <div class="row">
+                    <div class="col-3">
+                      <img style="width: 100%; margin-top: 10px;" src="assets/images/cloud-security-tips.png">
+                    </div>
+                    <div class="col-9">
+                      <h5>Cloud Security Tips</h5>
+                      <p class="reg-para">Insights on how to optimize cloud data security, protect business, and maintain brand reputation.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <div class="row">
+                    <div class="col-3">
+                      <img style="width: 100%; margin-top: 10px;" src="assets/images/attack-briefs.png">
+                    </div>
+                    <div class="col-9 cat-desc">
+                      <h5>Attack Briefs</h5>
+                      <p class="reg-para">Breaking news and exclusive details from our white-hat hackers on advanced inbox threats.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              
 
 
 
-              <ul class="nav nav-tabs nav-justified">
-
+              <!-- <ul class="nav nav-tabs nav-justified">
                 <li class="nav-item text-left">
                   <a class="nav-link" data-toggle="tab" href="#tab-1-1">
                     <div class="row">
@@ -266,8 +317,6 @@
                         <p class="reg-para">Insights on how to optimize cloud data security, protect business, and maintain brand reputation.</p>
                       </div>
                     </div>
-                    
-                    
                   </a>
                 </li>
 
@@ -284,12 +333,11 @@
                     </div>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
+
+
             </div>
           </div>
-
-          
-          
         </div>
 
 
