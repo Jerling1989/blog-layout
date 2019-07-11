@@ -37,6 +37,7 @@
   #main-image > span {
     font-size: 28px;
     line-height: 1.4;
+    padding: 5px 10px;
   }
 
   #second-image {
@@ -53,6 +54,7 @@
   #second-image > span {
     font-size: 16px;
     line-height: 1.4;
+    padding: 5px 10px;
   }
 
   #third-image {
@@ -70,6 +72,7 @@
   #third-image > span {
     font-size: 16px;
     line-height: 1.4;
+    padding: 5px 10px;
   }
 
   .reg-para {
@@ -182,7 +185,7 @@
     }
 
     #main-image {
-      height: 316px;
+      height: 266px;
       margin-bottom: 16px;
     }
 
@@ -191,7 +194,7 @@
     }
 
     #second-image {
-      height: 150px;
+      height: 125px;
     }
 
     #second-image > span {
@@ -199,11 +202,19 @@
     }
 
     #third-image {
-      height: 150px;
+      height: 125px;
     }
 
     #third-image > span {
       font-size: 12px;
+    }
+
+    .category-divs h5 {
+      font-size: .95rem;
+    }
+
+    .reg-para {
+      font-size: .75rem;
     }
   }
 
@@ -212,6 +223,31 @@
   @media (min-width: 992px) and (max-width: 1200px) {
     #large-img {
       padding-right: 0;
+    }
+
+    #main-image {
+      height: 336px;
+      margin-bottom: 16px;
+    }
+
+    #main-image > span {
+      font-size: 20px;
+    }
+
+    #second-image {
+      height: 160px;
+    }
+
+    #second-image > span {
+      font-size: 14px;
+    }
+
+    #third-image {
+      height: 160px;
+    }
+
+    #third-image > span {
+      font-size: 14px;
     }
   }
 
@@ -373,76 +409,74 @@
     <div class="space" data-MY="-40px"></div>
 
 
-    <div style="margin-bottom: 80px;">
-      <h1 class="text-center" style="margin-bottom: 45px; margin-top: -15px;">The Reinventing Email Security Blog</h1>
-      <div class="row">
-        <div id="large-img" class="col-12 col-md-8">
-          <div id="main-image" >
-            <span style="color: #fff; position: absolute; bottom: 5px; left: 10px;">Top Takeaways from the 2019 Gartner Security & Risk Management Summit</span>
-          </div>
-        </div>
+    <div class="row">
 
-        <div class="col-12 col-md-4">
-          <div id="second-image" class="col-12">
-            <span style="color: #fff; position: absolute; bottom: 5px; left: 10px;">What We’re Looking Forward to at Gartner Security & Risk Management Summit 2019</span>
-          </div>
+      <div class="col-12 text-center" style="margin-bottom: 45px; margin-top: -15px;">
+        <h1>The Reinventing Email Security Blog</h1>
+      </div>
 
-          <div id="third-image" class="col-12">
-            <span style="color: #fff; position: absolute; bottom: 5px; left: 10px;">Why Multi-Factor Authentication Isn't Foolproof</span>
-          </div>              
-        </div>
-
-        <div class="container" style="margin-top: 30px;">
-
-          <div class="row category-divs">
-            <div id="industry-insights" class="col-12 col-md-4">
-              <div class="row">
-                <div class="col-2 col-md-3">
-                  <img style="width: 100%; margin-top: 10px;" src="assets/images/industry-insights.png">
-                </div>
-                <div class="col-10 col-md-9">
-                  <h5>Industry Insights</h5>
-                  <p class="reg-para">Trends in cloud security focused on email and collaboration. Data from analysts and experts.</p>
-                </div>
-              </div>
-            </div>
-
-            <div id="cloud-security-tips" class="col-12 col-md-4">
-              <div class="row">
-                <div class="col-2 col-md-3">
-                  <img style="width: 100%; margin-top: 10px;" src="assets/images/cloud-security-tips.png">
-                </div>
-                <div class="col-10 col-md-9">
-                  <h5>Cloud Security Tips</h5>
-                  <p class="reg-para">Insights on how to optimize cloud data security, protect business, and maintain brand reputation.</p>
-                </div>
-              </div>
-            </div>
-
-            <div id="attack-briefs" class="col-12 col-md-4">
-              <div class="row">
-                <div class="col-2 col-md-3">
-                  <img style="width: 100%; margin-top: 10px;" src="assets/images/attack-briefs.png">
-                </div>
-                <div class="col-10 col-md-9 cat-desc">
-                  <h5>Attack Briefs</h5>
-                  <p class="reg-para">Breaking news and exclusive details from our white-hat hackers on advanced inbox threats.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
+      <div id="large-img" class="col-12 col-md-8">
+        <div id="main-image" >
+          <span style="color: #fff; position: absolute; bottom: 0px; left: 0px;">Top Takeaways from the 2019 Gartner Security & Risk Management Summit</span>
         </div>
       </div>
-    </div>
+
+      <div class="col-12 col-md-4">
+        <div id="second-image" class="col-12">
+          <span style="color: #fff; position: absolute; bottom: 0px; left: 0px;">What We’re Looking Forward to at Gartner Security & Risk Management Summit 2019</span>
+        </div>
+
+        <div id="third-image" class="col-12">
+          <span style="color: #fff; position: absolute; bottom: 0px; left: 0px;">Why Multi-Factor Authentication Isn't Foolproof</span>
+        </div>              
+      </div>
+
+
+      <div class="container" style="margin-top: 30px; margin-bottom: 80px;">
+        <div class="row category-divs">
+          <div id="industry-insights" class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-2 col-md-3">
+                <img style="width: 100%; margin-top: 10px;" src="assets/images/industry-insights.png">
+              </div>
+              <div class="col-10 col-md-9">
+                <h5>Industry Insights</h5>
+                <p class="reg-para">Trends in cloud security focused on email and collaboration. Data from analysts and experts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="cloud-security-tips" class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-2 col-md-3">
+                <img style="width: 100%; margin-top: 10px;" src="assets/images/cloud-security-tips.png">
+              </div>
+              <div class="col-10 col-md-9">
+                <h5>Cloud Security Tips</h5>
+                <p class="reg-para">Insights on how to optimize cloud data security, protect business, and maintain brand reputation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="attack-briefs" class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-2 col-md-3">
+                <img style="width: 100%; margin-top: 10px;" src="assets/images/attack-briefs.png">
+              </div>
+              <div class="col-10 col-md-9 cat-desc">
+                <h5>Attack Briefs</h5>
+                <p class="reg-para">Breaking news and exclusive details from our white-hat hackers on advanced inbox threats.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
-    <div class="row">
+
         <!-- LEFT POST COLUMN -->
         <div id="left-post-index" class="col-lg-8 bg-white">
-
 
           <!-- Featured Post-->
           <article class="post">
