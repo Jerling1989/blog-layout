@@ -5692,13 +5692,13 @@ tbody.collapse.show {
 }
 
 .badge-warning {
-    color: #212529;
+    color: #fff;
     background-color: #f7bb05;
 }
 
 .badge-warning[href]:hover,
 .badge-warning[href]:focus {
-    color: #212529;
+    color: #fff;
     text-decoration: none;
     background-color: #d39e00;
 }
